@@ -1,3 +1,17 @@
 git remote add origin https://github.com/kunleshow/frontend_classes.git
 git branch -M main
 git push -u origin main
+
+
+echo "# frontend_classes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kunleshow/frontend_classes.git
+git push -u origin main
+
+git status
+git add .
+git commit -m "message: second commit"
+git push
