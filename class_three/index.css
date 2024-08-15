@@ -3,6 +3,9 @@ img + nav{
     border: 2px solid black;
 }
 
+ul > li{
+    list-style: none;
+}
 
 
 
