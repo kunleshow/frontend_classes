@@ -1,14 +1,52 @@
+/* Sibling Selectors */
+img.logo{
+    width: 200px;
+}
 img + nav{
-    background-color: red;
+    background-color: blue;
     border: 2px solid black;
 }
 
-ul > li{
+li{
     list-style: none;
 }
 
+/* Pseudo-Class Selectors */
+a{
+    text-decoration: none;
+}
 
+/* Unvisited link */
+header a:link{
+    color: rgb(255, 255, 255);
+}
 
-/* div+p{
-    background-color: greenyellow;
-} */
+a:visited{
+    color: red; 
+} 
+/* Hover */
+a:hover{
+    color: black;
+}
+
+/* Active */
+a:active{
+    color: green;
+}
+
+/* Propert Cards */
+
+.property_cards{
+    background-color: blue;
+    margin: 3rem;
+    border: 8px solid black;
+    padding: 3rem;
+}
+
+.property_cards:hover{
+    background-color: rgb(255, 0, 250);
+}
+
+.property_cards .card > p{
+    color:whitesmoke;
+}
