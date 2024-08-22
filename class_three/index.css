@@ -1,14 +1,37 @@
+:root{
+    /* font-size: 18px; */
+}
+
+.mainHeader{
+    display: flex;
+    /* flex-direction: row; default, redundant when specified */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+
+}
+
+nav ul{
+    display: flex;
+}
+
 /* Sibling Selectors */
+img{
+    float: left;
+}
 img.logo{
     width: 200px;
 }
 img + nav{
-    background-color: blue;
-    border: 2px solid black;
+    /* background-color: blue;
+    border: 2px solid black; */
 }
 
 li{
     list-style: none;
+    margin-inline: 2rem;
 }
 
 /* Pseudo-Class Selectors */
@@ -18,35 +41,52 @@ a{
 
 /* Unvisited link */
 header a:link{
-    color: rgb(255, 255, 255);
+    color: black;
 }
-
-a:visited{
-    color: red; 
-} 
+ 
 /* Hover */
-a:hover{
+header a:hover{
     color: black;
 }
 
 /* Active */
-a:active{
+header a:active{
     color: green;
 }
 
+.main_section{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.sidebar{
+    margin: 0 auto auto 1rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.side_item{
+    margin-block: 2rem;
+}
 /* Propert Cards */
 
 .property_cards{
-    background-color: blue;
+    /* background-color: blue; */
     margin: 3rem;
-    border: 8px solid black;
+    /* border: 1px solid black; */
+    
+    font-size: 18px;
+}
+
+.card{
     padding: 3rem;
 }
 
 .property_cards:hover{
-    background-color: rgb(255, 0, 250);
+    /* background-color: rgb(255, 0, 250); */
 }
 
 .property_cards .card > p{
-    color:whitesmoke;
+    /* font-size: 2.5em; */
+    /* color:whitesmoke; */
 }
