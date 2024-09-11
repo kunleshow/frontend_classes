@@ -1,0 +1,45 @@
+#one{
+    /* display: flex; */
+}
+
+.inner{
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.outer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner>img{
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.inner>p, .outer>p{
+    
+    width: 25%;
+    padding: 2rem;
+}
+#para_one{
+    background-color: rgb(195, 101, 19);
+}
+
+#para_two{
+    background-color: rgb(140, 225, 187);
+}
+
+#para_three{
+    background-color: rgb(161, 197, 247);
+}
+
+
+
